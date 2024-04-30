@@ -1,0 +1,29 @@
+Giphy App
+
+Have a button for the user to click and a text input
+When the user add a search parameter in the input field then clicks the button,
+the Giphy API will fetch images based on what the user is requesting
+And the x number of images will be added to the page
+
+
+steps
+
+HTML
+Create an input field 
+Create a button
+
+Fetch images
+JS
+Add eventlistener to the button
+write fetch function
+
+Append images to the page
+    create a loop (the loop will turn the data into readable )
+    create an image HTML Element (time-interval excersice lesson 9 const imgEl = document.createElement('img'))
+        - add src attribute to image (imgEl.setAttribute('src', 'images/image_1.jpg'))
+
+    append image to parent element
+
+https://api.giphy.com/v1/gifs/search?api_key=75H8w8QDmwChkNA4yTHjlSaPk9jdUcDH&q=horses&limit=5&offset=0&rating=g
+
+after you get puppies rendered to page then you add the input field functionality because we didn't outline that part. 
