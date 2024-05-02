@@ -6,6 +6,7 @@ function getApi() {
   imageResults.innerHTML = ""  //delete inside input field everytime
   const keyword = inputField.value  // save value of input field
   const requestUrl = `https://api.giphy.com/v1/gifs/search?api_key=75H8w8QDmwChkNA4yTHjlSaPk9jdUcDH&q=${keyword}&limit=5&rating=g`
+  
   fetch(requestUrl)
     .then(function (response) {
       return response.json();
